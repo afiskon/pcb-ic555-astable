@@ -8133,71 +8133,6 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="battery">
-<description>&lt;b&gt;Lithium Batteries and NC Accus&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="CR2032H">
-<description>&lt;b&gt;LI BATTERY&lt;/b&gt; Varta</description>
-<wire x1="-0.635" y1="8.255" x2="0.635" y2="8.255" width="0.254" layer="21"/>
-<wire x1="0" y1="8.89" x2="0" y2="7.62" width="0.254" layer="21"/>
-<wire x1="-0.635" y1="-8.89" x2="0.635" y2="-8.89" width="0.254" layer="21"/>
-<wire x1="-3.556" y1="11.049" x2="-6.604" y2="11.049" width="0.1524" layer="51"/>
-<wire x1="-6.604" y1="11.049" x2="-6.604" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="6.604" y1="-2.54" x2="6.604" y2="11.049" width="0.1524" layer="21"/>
-<wire x1="-6.604" y1="-2.54" x2="-1.27" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="3.175" x2="-1.27" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="3.175" x2="1.27" y2="3.175" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="3.175" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-2.54" x2="6.604" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-6.698" y1="7.5979" x2="10.033" y2="0" width="0.1524" layer="21" curve="227.397154"/>
-<wire x1="3.556" y1="11.049" x2="-3.556" y2="11.049" width="0.1524" layer="21"/>
-<wire x1="6.477" y1="11.049" x2="3.556" y2="11.049" width="0.1524" layer="51"/>
-<wire x1="6.6203" y1="7.6668" x2="10.0331" y2="0" width="0.1524" layer="21" curve="-49.440271"/>
-<pad name="+@1" x="-5.08" y="10.795" drill="1.1176" diameter="2.54" shape="octagon"/>
-<pad name="+" x="5.08" y="10.795" drill="1.1176" diameter="2.54" shape="octagon"/>
-<pad name="-" x="0" y="-6.985" drill="1.1176" diameter="2.54" shape="octagon"/>
-<text x="-2.54" y="11.43" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="5.08" y="-1.905" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<text x="-2.921" y="-5.08" size="1.27" layer="21" ratio="10">Lit.3V</text>
-</package>
-</packages>
-<symbols>
-<symbol name="1V2+2">
-<wire x1="-1.905" y1="0.635" x2="-1.905" y2="0" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="0" x2="-1.905" y2="-0.635" width="0.4064" layer="94"/>
-<wire x1="-0.635" y1="2.54" x2="-0.635" y2="0" width="0.4064" layer="94"/>
-<wire x1="-0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.635" y1="0" x2="-0.635" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-2.54" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="+" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="-" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="+@1" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CR2032H" prefix="G">
-<description>&lt;b&gt;LI BATTERY&lt;/b&gt; Varta</description>
-<gates>
-<gate name="1" symbol="1V2+2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CR2032H">
-<connects>
-<connect gate="1" pin="+" pad="+"/>
-<connect gate="1" pin="+@1" pad="+@1"/>
-<connect gate="1" pin="-" pad="-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8213,7 +8148,6 @@ Source: www.kingbright.com</description>
 <part name="C2" library="resistor" deviceset="C-US" device="050-035X075" value="100 uF"/>
 <part name="C3" library="resistor" deviceset="C-EU" device="050-035X075" value="100 nF"/>
 <part name="LED1" library="led" deviceset="LED" device="5MM"/>
-<part name="G1" library="battery" deviceset="CR2032H" device=""/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="0204/7" value="1k"/>
 <part name="R2" library="resistor" deviceset="R-EU_" device="0204/7" value="1k"/>
 <part name="R3" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
@@ -8221,6 +8155,8 @@ Source: www.kingbright.com</description>
 <sheets>
 <sheet>
 <plain>
+<text x="33.02" y="91.44" size="1.778" layer="91">VCC (+)</text>
+<text x="15.24" y="91.44" size="1.778" layer="91">GND (-)</text>
 </plain>
 <instances>
 <instance part="IC1" gate="A" x="53.34" y="55.88"/>
@@ -8228,7 +8164,6 @@ Source: www.kingbright.com</description>
 <instance part="C2" gate="G$1" x="27.94" y="78.74" rot="R270"/>
 <instance part="C3" gate="G$1" x="27.94" y="53.34" rot="R270"/>
 <instance part="LED1" gate="G$1" x="60.96" y="33.02" rot="R270"/>
-<instance part="G1" gate="1" x="27.94" y="88.9"/>
 <instance part="R1" gate="G$1" x="48.26" y="33.02"/>
 <instance part="R2" gate="G$1" x="76.2" y="71.12" rot="R90"/>
 <instance part="R3" gate="G$1" x="76.2" y="48.26" rot="R90"/>
@@ -8279,7 +8214,6 @@ Source: www.kingbright.com</description>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="78.74" x2="38.1" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="78.74" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="G1" gate="1" pin="+"/>
 <wire x1="38.1" y1="88.9" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
 <junction x="38.1" y="78.74"/>
 <junction x="38.1" y="58.42"/>
@@ -8309,7 +8243,6 @@ Source: www.kingbright.com</description>
 <segment>
 <wire x1="43.18" y1="33.02" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="33.02" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="G1" gate="1" pin="-"/>
 <wire x1="20.32" y1="48.26" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="53.34" x2="20.32" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="88.9" x2="20.32" y2="88.9" width="0.1524" layer="91"/>
